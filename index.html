@@ -517,25 +517,31 @@
             </div>
         </section>
 
-        <section class="page" id="loginPage">
+        <section class="page" id="loginPage" style="margin-top: 40px;">
             <div class="auth-container section-container">
-                <div class="auth-image-box cinematic-bg" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80');">
-                    <div class="auth-overlay dark-gradient">
-                        <h2 style="color:white; font-size:2.5rem; margin-bottom:1rem;">Welcome Back</h2>
-                        <p style="color:rgba(255,255,255,0.8); font-size:1.1rem;">Log in to access your orders, track deliveries, and unlock personalized recommendations.</p>
+                <div class="auth-image-box cinematic-bg" style="background-image: url('./login.jpeg'); ">
+                    <div class="auth-overlay dark-gradient" style=" margin-bottom: 60px; font-weight: bold;">
+                        <h2 style="color:rgb(22, 16, 115); font-size:2.5rem; margin-bottom:1rem;">Welcome Back</h2>
+                        <p style="color:rgba(255, 255, 255, 0.8); font-size:1.1rem;margin-top: 17rem; font-weight: 100;">Log in to
+                            access your orders,
+                            track
+                            deliveries, and
+                            unlock
+                            personalized recommendations.</p>
                     </div>
                 </div>
                 <div class="auth-form-box glass-panel">
                     <h2 class="mb-4">Sign In</h2>
                     <form id="loginForm" class="modern-form" onsubmit="handleLogin(event)">
-                        <div class="input-group">
-                            <i class="fas fa-envelope input-icon"></i>
+                        <div class="input-group" style="position: relative;">
+                            <i class="fas fa-envelope input-icon" style="position: absolute; top: 1rem; left: 12px;"></i>
                             <input type="email" id="loginEmail" class="glass-input" placeholder="Email Address" required>
                         </div>
-                        <div class="input-group">
-                            <i class="fas fa-lock input-icon"></i>
+                        <div class="input-group " style="position: relative;">
+                            <i class="fas fa-lock input-icon" style="position: absolute; top: 1rem; left: 12px;"></i>
                             <input type="password" id="loginPassword" class="glass-input" placeholder="Password" required>
-                            <i class="fas fa-eye toggle-pwd" onclick="togglePassword('loginPassword')"></i>
+                            <i class="fas fa-eye toggle-pwd" onclick="togglePassword('loginPassword')"
+                                style="position: absolute;  right: 0; top: 1rem; padding-right: 10px;"></i>
                         </div>
                         <button type="submit" class="action-btn primary full-width mt-4 lg">Login to Account</button>
                         <p class="auth-switch mt-4 text-center text-secondary">New to ZIGZEX? <a href="#" onclick="showPage('signup'); return false;" class="text-primary font-weight-bold">Create an account</a></p>
@@ -544,33 +550,35 @@
             </div>
         </section>
 
-        <section class="page" id="signupPage">
+        <section class="page" id="signupPage" style="margin-top: 30px;">
             <div class="auth-container section-container">
-                <div class="auth-image-box cinematic-bg" style="background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80');">
+                <div class="auth-image-box cinematic-bg" style="background-image: url('./login.jpeg');">
                     <div class="auth-overlay dark-gradient">
-                        <h2 style="color:white; font-size:2.5rem; margin-bottom:1rem;">Join ZIGZEX MART</h2>
-                        <p style="color:rgba(255,255,255,0.8); font-size:1.1rem;">Experience premium quality, 24/7 support, and blazing fast delivery across India.</p>
+                        <h2 style="color:rgb(9, 38, 222); font-size:2rem; margin-bottom:1rem;">Join ZIGZEX MART</h2>
+                        <p style=" margin-top: 26rem; color:rgba(255,255,255,0.8); font-size:1.1rem;">Experience premium quality, 24/7 support,
+                            and blazing fast delivery across India.</p>
                     </div>
                 </div>
                 <div class="auth-form-box glass-panel">
                     <h2 class="mb-4">Create Account</h2>
                     <form id="signupForm" class="modern-form" onsubmit="handleSignup(event)">
-                        <div class="input-group">
-                            <i class="fas fa-user input-icon"></i>
+                        <div class="input-group" style="position: relative;">
+                            <i class="fas fa-user input-icon" style="position: absolute; top: 1rem; left: 12px;"></i>
                             <input type="text" id="signupName" class="glass-input" placeholder="Full Name" required>
                         </div>
-                        <div class="input-group">
-                            <i class="fas fa-envelope input-icon"></i>
+                        <div class="input-group" style="position: relative;">
+                            <i class="fas fa-envelope input-icon" style="position: absolute; top: 1rem; left: 12px;"></i>
                             <input type="email" id="signupEmail" class="glass-input" placeholder="Email Address" required>
                         </div>
-                        <div class="input-group">
-                            <i class="fas fa-phone input-icon"></i>
+                        <div class="input-group" style="position: relative;">
+                            <i class="fas fa-phone input-icon" style="position: absolute; top: 1rem; left: 12px;"></i>
                             <input type="tel" id="signupMobile" class="glass-input" placeholder="Mobile Number (10 digits)" pattern="[0-9]{10}" required>
                         </div>
-                        <div class="input-group">
-                            <i class="fas fa-lock input-icon"></i>
+                        <div class="input-group" style="position: relative;">
+                            <i class="fas fa-lock input-icon" style="position: absolute; top: 1rem; left: 12px;"></i>
                             <input type="password" id="signupPassword" class="glass-input" placeholder="Create Password (Min 6 chars)" minlength="6" required>
-                            <i class="fas fa-eye toggle-pwd" onclick="togglePassword('signupPassword')"></i>
+                            <i class="fas fa-eye toggle-pwd" onclick="togglePassword('signupPassword')"
+                                style="position: absolute; top: 1rem; right: 12px;"></i>
                         </div>
                         <button type="submit" class="action-btn primary full-width mt-4 lg">Register Now</button>
                         <p class="auth-switch mt-4 text-center text-secondary">Already have an account? <a href="#" onclick="showPage('login'); return false;" class="text-primary font-weight-bold">Log In</a></p>
